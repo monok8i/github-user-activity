@@ -4,32 +4,33 @@
 
 This command-line tool allows you to quickly fetch and view the recent activity of any GitHub user. It retrieves event data from the GitHub API and presents it in a user-friendly format.
 
-## Features
+This is also sample solution for the [github-user-activity](https://roadmap.sh/projects/github-user-activity) challenge from [roadmap.sh](https://roadmap.sh/).
 
-*   **Fetch User Events:** Retrieves a list of recent events (e.g., commits, pull requests, issues) for a given GitHub username.
-*   **Clear Output:** Displays the event type and the repository name for each event in an easy-to-read format.
-*   **Error Handling:** Gracefully handles various API errors, such as rate limiting, user not found, and network issues.
-*   **Informative Messages:** Provides helpful error messages and warnings when problems occur.
-*   **Command-Line Interface:** Uses `click` to create an intuitive command-line interface.
+## How to run
 
-## Installation
+Clone the repository:
 
-1.  **Prerequisites:**
-    *   Python 3.7+
+```bash
+git clone https://github.com/monok8i/github-user-activity.git
+cd ./github-user-activity
+```
 
-2.  **Installation:**
-    ```bash
-    git clone https://github.com/monok8i/github-user-activity.git
-    cd ./github-user-activity
-    
-     # activate venv
-    
-    pip install -e . # install locally for using `github-user-activity` cli
-    ```
+Activate virtual environment:
 
-## Usage
+```bash
+python3 -m venv venv
+source ./venv/bin/activate
+```
+
+Install locally (for using `github-user-activity` command):
+
+```bash
+pip install -e .
+```
 
 After installation, you can use the `github-user-activity` command from your terminal:
 
 ```bash
 github-user-activity --username <GITHUB_USERNAME>
+```
+
